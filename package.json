@@ -12,7 +12,7 @@
     "styled-components": "5.2.1"
   },
   "scripts": {
-    "dev": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006 -s public",
+    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006 -s public",
     "start": "npm run dev"
   },
   "eslintConfig": {
@@ -41,6 +41,7 @@
     "@storybook/node-logger": "6.5.15",
     "@storybook/preset-create-react-app": "3.1.7",
     "@storybook/react": "6.5.15",
+    "cross-env": "^10.0.0",
     "webpack": "4.44.2"
   }
 }
